@@ -11,6 +11,8 @@ public class Field {
         this.countCols = countCols;
         field = new char[countRows][countCols];
         clearField();
+
+        field[0][0]='@';
     }
 
     private void clearField() {
