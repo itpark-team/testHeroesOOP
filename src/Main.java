@@ -1,11 +1,8 @@
-
-
 import java.util.ArrayList;
 
 public class Main {
 
     public static void main(String[] args) {
-        // write your code here
         ArrayList<Unit> units = new ArrayList<Unit>();
         units.add(new Unit(1, 1, 'A'));
         units.add(new Unit(1, 2, 'B'));

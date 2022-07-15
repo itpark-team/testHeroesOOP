@@ -27,20 +27,13 @@ public class Field {
                 return units.get(k).getSign();
             }
         }
-        return '~';
+        return field[i][j];
     }
 
     public void printFieldWithUnits(ArrayList<Unit> units) {
         for (int i = 0; i < countRows; i++) {
             for (int j = 0; j < countCols; j++) {
-
-                char currentSign = getUnitSignByCoords(i, j, units);
-
-                if (currentSign == '~') {
-                    System.out.print(field[i][j]);
-                } else {
-                    System.out.print(currentSign);
-                }
+                System.out.print(getUnitSignByCoords(i, j, units));
             }
             System.out.println();
         }
